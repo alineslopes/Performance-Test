@@ -17,32 +17,6 @@ The goal is to ensure the application meets performance requirements under real 
 
 ---
 
-## Project Structure
-
-│
-├── README.md
-├── data/
-│ └── users.csv # Dynamic data for CSV-based tests
-├── utils/
-│ ├── auth.js # Function to login and get token
-│ └── dataGenerator.js # Random data generator for posts
-├── smoke/
-│ └── smoke-test.js # Basic quick test
-├── load/
-│ └── load-test.js # Progressive load test
-├── stress/
-│ └── stress-test.js # Stress test (high peaks)
-├── spike/
-│ └── spike-test.js # Rapid spike test
-├── soak/
-│ └── soak-test.js # Long duration test
-└── scenarios/
-├── login-scenario.js # Simple login scenario
-├── login-csv-scenario.js # Login with CSV data
-├── create-post-scenario.js # Authenticated post creation and deletion
-
----
-
 ## How to Run the Tests
 
 1. Install [K6](https://k6.io/docs/getting-started/installation/)
