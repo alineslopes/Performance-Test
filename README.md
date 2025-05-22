@@ -2,8 +2,6 @@
 
 This project is a robust performance testing suite using the [K6](https://k6.io/) tool, focused on the demo API: [https://test-api.k6.io](https://test-api.k6.io).
 
----
-
 ## What is Performance Testing?
 
 Performance testing is the process of evaluating a system's behavior under certain workloads, measuring aspects such as:
@@ -24,12 +22,11 @@ The goal is to ensure the application meets performance requirements under real 
 
 To run a quick smoke test:
 
-```bash
 k6 run smoke/smoke-test.js
 
 ---
 
-Scenario Details
+## Scenario Details
 
 Login with CSV
 Uses the papaparse library to parse data from the data/users.csv file.
@@ -45,7 +42,8 @@ At the end, deletes the created post to keep the environment clean.
 
 ---
 
-Next Steps and Improvements
+## Next Steps and Improvements
+
 Add update (PUT/PATCH) and delete tests for other resources.
 
 Integrate with visualization tools (Grafana/InfluxDB).
@@ -56,8 +54,10 @@ Generate automated reports.
 
 ---
 
-References
-K6 Documentation
+## References
+K6 Documentation: https://grafana.com/docs/k6/latest/
+Used demo API: https://quickpizza.grafana.com/
+
 
 Used demo API
 
